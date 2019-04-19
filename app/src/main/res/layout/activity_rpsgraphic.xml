@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_rpsgraphic"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.chirag.rockpaperscissor.RPSGraphic">
+
+    <ImageView
+        android:id="@+id/btnRock"
+        android:src="@drawable/dstone"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignTop="@+id/btnPaper"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:id="@+id/btnScissor"
+        android:src="@drawable/dscissor"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignTop="@+id/btnPaper"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="ROCK"
+        android:id="@+id/lblbrck"
+        android:fontFamily="casual"
+        android:textSize="22sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/btnRock"
+        android:layout_alignParentStart="true" />
+    <TextView
+        android:text="   PAPER"
+        android:fontFamily="casual"
+        android:textSize="22sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/lblbrck"
+        android:layout_alignBottom="@+id/lblbrck"
+        android:layout_alignStart="@+id/btnPaper" />
+    <TextView
+        android:text="SCISSOR"
+        android:fontFamily="casual"
+        android:textSize="22sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnScissor"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"/>
+
+
+
+
+
+    <ImageView
+        android:id="@+id/btnPaper"
+        android:src="@drawable/dpaper"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="69dp"
+        android:layout_below="@+id/btnAI"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/lblAIRes"
+        android:fontFamily="casual"
+        android:textSize="22sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/lblComputer"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:id="@+id/btnAI"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/lblAIRes"
+        android:layout_alignStart="@+id/btnPaper" />
+
+    <TextView
+        android:id="@+id/lblComputer"
+        android:text="COMPUTER"
+        android:textSize="26sp"
+        android:textColor="@color/RED"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/lblPlayer"
+        android:text="PLAYER"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:fontFamily="sans-serif"
+        android:textSize="26sp"
+        android:textColor="@color/RED"
+        android:layout_below="@+id/lblbrck"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/lblScore"
+        android:text="----- SCORE ----\n\nPlayer : 0\nComputer : 0\nDraw : 0\nTotal : 0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/lblTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/lblScore"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="438dp"
+        android:layout_marginEnd="39dp"
+        android:text=""
+        android:textColor="@color/RED"
+        android:textSize="24sp" />
+</RelativeLayout>

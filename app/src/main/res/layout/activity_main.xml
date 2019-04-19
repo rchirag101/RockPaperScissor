@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.chirag.rockpaperscissor.MainActivity"
+    >
+
+    <TextView
+        android:id="@+id/lblTitle"
+        android:text="----- ROCK PAPER SCISSOR -----"
+        android:textSize="26sp"
+        android:fontFamily="casual"
+        android:textColor="@color/RED"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/lblCh"
+        android:text="------------- Your choice  -------------"
+        android:textSize="18sp"
+        android:fontFamily="sans-serif"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/lblTitle"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/btnRock"
+        android:text="ROCK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/lblCh"
+        android:layout_alignParentStart="true"
+        style="@android:style/Widget.Holo.Button" />
+
+    <Button
+        android:id="@+id/btnScissor"
+        android:text="SCISSOR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_alignBaseline="@+id/btnPaper"
+        android:layout_alignBottom="@+id/btnPaper"
+        android:layout_toEndOf="@+id/btnPaper" />
+
+    <Button
+        android:id="@+id/btnPaper"
+        android:text="PAPER"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="43dp"
+        android:layout_alignBaseline="@+id/btnRock"
+        android:layout_alignBottom="@+id/btnRock"
+        android:layout_toEndOf="@+id/btnRock"
+        style="@android:style/Widget.DeviceDefault.Button.Inset" />
+
+    <TextView
+        android:id="@+id/lblPch"
+        android:text="---------- Computer's choice -----------"
+        android:textSize="18sp"
+        android:fontFamily="sans-serif"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/btnPaper" />
+
+
+    <TextView
+        android:id="@+id/lblScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblPChoice"
+        android:layout_alignStart="@+id/lblTitle"
+        android:layout_marginTop="6dp"
+        android:fontFamily="sans-serif"
+        android:text=""
+        android:textSize="18sp" />
+    <TextView
+        android:id="@+id/lblPChoice"
+        android:text=""
+        android:textSize="22sp"
+        android:fontFamily="casual"
+        android:textColor="@color/colorAccent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/lblPch"
+        android:layout_alignEnd="@+id/btnPaper" />
+    <TextView
+        android:id="@+id/lblPC"
+        android:text="----- SCORE ----\n\nPlayer : 0\n\nComputer : 0\n\nDraw : 0\n\nTotal : 0"
+        android:textSize="18sp"
+        android:fontFamily="sans-serif"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/lblScore"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="15dp" />
+    <TextView
+        android:id="@+id/lblRes"
+        android:text=""
+        android:textSize="26sp"
+        android:textColor="@color/colorAccent"
+        android:fontFamily="casual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/lblPC"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="15dp" />
+
+    <TextView
+        android:id="@+id/lblTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/lblScore"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="29dp"
+        android:textColor="@color/RED"
+        android:textSize="24sp"/>
+
+
+</RelativeLayout>
