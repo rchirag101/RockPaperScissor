@@ -19,6 +19,3 @@ Screeshots :
 
 ![3)Result](https://github.com/rchirag101/RockPaperScissor/blob/master/app/src/main/res/Screenshots/3\)Result.jpg)
 
-
-
-[![Watch the video]()](https://youtu.be/b865dzNrSsU)
